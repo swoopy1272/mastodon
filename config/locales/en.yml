@@ -1,8 +1,8 @@
 ---
 en:
   about:
-    about_hashtag_html: These are public toots tagged with <strong>#%{hashtag}</strong>. You can interact with them if you have an account anywhere in the fediverse.
-    about_mastodon_html: Mastodon is a social network based on open web protocols and free, open-source software. It is decentralized like e-mail.
+    about_hashtag_html: These are public pings tagged with <strong>#%{hashtag}</strong>. You can interact with them if you have an account anywhere in the fediverse.
+    about_mastodon_html: Cybrespace is an instance of Mastodon, a social network based on open web protocols and free, open-source software. It is decentralized like e-mail.
     about_this: About
     closed_registrations: Registrations are currently closed on this instance. However! You can find a different instance to make an account on and get access to the very same network from there.
     contact: Contact
@@ -19,7 +19,7 @@ en:
       humane_approach_title: A more humane approach
       not_a_product_body: Mastodon is not a commercial network. No advertising, no data mining, no walled gardens. There is no central authority.
       not_a_product_title: You’re a person, not a product
-      real_conversation_body: With 500 characters at your disposal and support for granular content and media warnings, you can express yourself the way you want to.
+      real_conversation_body: With 512 characters at your disposal and support for granular content and media warnings, you can express yourself the way you want to.
       real_conversation_title: Built for real conversation
       within_reach_body: Multiple apps for iOS, Android, and other platforms thanks to a developer-friendly API ecosystem allow you to keep up with your friends anywhere.
       within_reach_title: Always within reach
@@ -29,7 +29,7 @@ en:
     learn_more: Learn more
     other_instances: Instance list
     source_code: Source code
-    status_count_after: statuses
+    status_count_after: pings 
     status_count_before: Who authored
     user_count_after: users
     user_count_before: Home to
@@ -42,8 +42,8 @@ en:
     nothing_here: There is nothing here!
     people_followed_by: People whom %{name} follows
     people_who_follow: People who follow %{name}
-    posts: Toots
-    posts_with_replies: Toots with replies
+    posts: Pings
+    posts_with_replies: Pings with replies
     remote_follow: Remote follow
     reserved_username: The username is reserved
     roles:
@@ -289,10 +289,10 @@ en:
     delete_account_html: If you wish to delete your account, you can <a href="%{path}">proceed here</a>. You will be asked for confirmation.
     didnt_get_confirmation: Didn't receive confirmation instructions?
     forgot_password: Forgot your password?
-    invalid_reset_password_token: Password reset token is invalid or expired. Please request a new one.
-    login: Log in
-    logout: Logout
-    register: Sign up
+    invalid_reset_password_token: Password reset token is invalid or expired. Please try again.
+    login: Jack in
+    logout: Jack out
+    register: Apply for upload
     resend_confirmation: Resend confirmation instructions
     reset_password: Reset password
     set_new_password: Set new password
@@ -348,7 +348,7 @@ en:
     storage: Media storage
   followers:
     domain: Domain
-    explanation_html: If you want to ensure the privacy of your statuses, you must be aware of who is following you. <strong>Your private statuses are delivered to all instances where you have followers</strong>. You may wish to review them, and remove followers if you do not trust your privacy to be respected by the staff or software of those instances.
+    explanation_html: If you want to ensure the privacy of your pings , you must be aware of who is following you. <strong>Your private pings are delivered to all instances where you have followers</strong>. You may wish to review them, and remove followers if you do not trust your privacy to be respected by the staff or software of those instances.
     followers_count: Number of followers
     lock_link: Lock your account
     purge: Remove from followers
@@ -356,7 +356,7 @@ en:
       one: In the process of soft-blocking followers from one domain...
       other: In the process of soft-blocking followers from %{count} domains...
     true_privacy_html: Please mind that <strong>true privacy can only be achieved with end-to-end encryption</strong>.
-    unlocked_warning_html: Anyone can follow you to immediately view your private statuses. %{lock_link} to be able to review and reject followers.
+    unlocked_warning_html: Anyone can follow you to immediately view your private pings. %{lock_link} to be able to review and reject followers.
     unlocked_warning_title: Your account is not locked
   generic:
     changes_saved_msg: Changes successfully saved!
@@ -377,7 +377,7 @@ en:
   landing_strip_signup_html: If you don't, you can <a href="%{sign_up_path}">sign up here</a>.
   media_attachments:
     validations:
-      images_and_video: Cannot attach a video to a status that already contains images
+      images_and_video: Cannot attach a video to a ping that already contains images
       too_many: Cannot attach more than 4 files
   notification_mailer:
     digest:
@@ -390,8 +390,8 @@ en:
         one: "1 new notification since your last visit \U0001F418"
         other: "%{count} new notifications since your last visit \U0001F418"
     favourite:
-      body: 'Your status was favourited by %{name}:'
-      subject: "%{name} favourited your status"
+      body: 'Your ping was florped by %{name}:'
+      subject: "%{name} florped your ping"
     follow:
       body: "%{name} is now following you!"
       subject: "%{name} is now following you"
@@ -402,8 +402,8 @@ en:
       body: 'You were mentioned by %{name} in:'
       subject: You were mentioned by %{name}
     reblog:
-      body: 'Your status was boosted by %{name}:'
-      subject: "%{name} boosted your status"
+      body: 'Your ping was relayed by %{name}:'
+      subject: "%{name} relayed your ping"
   number:
     human:
       decimal_units:
@@ -464,7 +464,7 @@ en:
       weibo: Weibo
     current_session: Current session
     description: "%{browser} on %{platform}"
-    explanation: These are the web browsers currently logged in to your Mastodon account.
+    explanation: These are the web browsers currently logged in to your cybre.space account.
     ip: IP
     platforms:
       adobe_air: Adobe Air
@@ -487,7 +487,7 @@ en:
     back: Back to Mastodon
     delete: Account deletion
     development: Development
-    edit_profile: Edit profile
+    edit_profile: edit ~/.profile
     export: Data export
     followers: Authorized followers
     import: Import
@@ -514,8 +514,8 @@ en:
       unlisted_long: Everyone can see, but not listed on public timelines
   stream_entries:
     click_to_show: Click to show
-    pinned: Pinned toot
-    reblogged: boosted
+    pinned: Pinned ping
+    reblogged: relayed
     sensitive_content: Sensitive content
   terms:
     body_html: |

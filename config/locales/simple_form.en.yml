@@ -9,7 +9,7 @@ en:
           one: <span class="name-counter">1</span> character left
           other: <span class="name-counter">%{count}</span> characters left
         header: PNG, GIF or JPG. At most 2MB. Will be downscaled to 700x335px
-        locked: Requires you to manually approve followers
+        locked: Requires you to manually approve followers and defaults ping privacy to followers-only
         note:
           one: <span class="note-counter">1</span> character left
           other: <span class="note-counter">%{count}</span> characters left
@@ -42,10 +42,10 @@ en:
         setting_boost_modal: Show confirmation dialog before boosting
         setting_default_privacy: Post privacy
         setting_default_sensitive: Always mark media as sensitive
-        setting_delete_modal: Show confirmation dialog before deleting a toot
+        setting_delete_modal: Show confirmation dialog before deleting a ping
         setting_noindex: Opt-out of search engine indexing
         setting_reduce_motion: Reduce motion in animations
-        setting_system_font_ui: Use system's default font
+        setting_system_font_ui: Use a poorly-chosen, heuristic-based approximation of the system font
         setting_theme: Site theme
         setting_unfollow_modal: Show confirmation dialog before unfollowing someone
         severity: Severity
@@ -56,11 +56,11 @@ en:
         must_be_following: Block notifications from people you don't follow
       notification_emails:
         digest: Send digest e-mails
-        favourite: Send e-mail when someone favourites your status
+        favourite: Send e-mail when someone florps your ping
         follow: Send e-mail when someone follows you
         follow_request: Send e-mail when someone requests to follow you
         mention: Send e-mail when someone mentions you
-        reblog: Send e-mail when someone boosts your status
+        reblog: Send e-mail when someone boosts your ping
     'no': 'No'
     required:
       mark: "*"
