@@ -12,25 +12,13 @@ body {
 @media screen and (min-width: 1300px) { 
   .column {
     flex-grow: 1 !important;
-    max-width: 500px;
+    max-width: 400px;
   }
 
   .drawer {
-    width: 20%;
+    width: 17%;
+    max-width: 400px;
   }
-
-  .columns-area { 
-    justify-content: center; 
-  } 
-}
-
-@media screen and (min-width: 1900px) { 
-  .column, .drawer { 
-    width: 400px; 
-    border-radius: 4px; 
-    height: 96vh; 
-    margin-top: 2vh; 
-  } 
 }
 
 .muted {
@@ -88,7 +76,65 @@ body {
   height:inherit;
 }
 
+.drawer__pager {
+  overflow-y:auto;
+}
+
 .column {
   // trying to fix @mdhughes safari problem
   max-height:100vh;
+}
+
+
+
+.media-gallery {
+  height:auto !important;
+  max-height:30vh;
+  position:relative;
+  margin-top:20px;
+  margin-left:-68px;
+  width: calc(100% + 80px);
+}
+
+.media-gallery:before{
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.media-gallery__item,
+.media-gallery .media-spoiler{
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0 !important;
+  position:absolute;
+}
+
+.media-spoiler-video:before {
+  content:"";
+  display:block;
+  padding-top:100%;
+}
+
+.media-spoiler-video,
+.status__video-player,
+.detailed-status > .media-spoiler,
+.status > .media-spoiler {
+  height:auto !important;
+  max-height:30vh;
+  position:relative;
+  margin-top:20px;
+  margin-left:-68px;
+  width: calc(100% + 80px) !important;
+}
+
+.status__video-player-video {
+  transform:unset;
+}
+
+.detailed-status > .media-spoiler,
+.status > .media-spoiler {
+  height:30vh !important;
+  vertical-align:middle;
 }
