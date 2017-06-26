@@ -87,43 +87,26 @@ body {
 }
 
 
-
 .media-gallery {
-  height:auto !important;
   max-height:30vh;
+  height:30vh !important;
   position:relative;
   margin-top:20px;
   margin-left:-68px;
   width: calc(100% + 80px);
 }
 
-.media-gallery:before{
-  content: "";
-  display: block;
-  padding-top: 100%;
-}
-
-.media-gallery__item,
-.media-gallery .media-spoiler{
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0 !important;
-  position:absolute;
-}
-
-.media-spoiler-video:before {
-  content:"";
-  display:block;
-  padding-top:100%;
+.detailed-status .media-gallery {
+  margin-left:-10px;
+  width: calc(100% + 22px);
 }
 
 .media-spoiler-video,
 .status__video-player,
 .detailed-status > .media-spoiler,
 .status > .media-spoiler {
-  height:auto !important;
   max-height:30vh;
+  height:30vh !important;
   position:relative;
   margin-top:20px;
   margin-left:-68px;
@@ -132,6 +115,7 @@ body {
 
 .status__video-player-video {
   transform:unset;
+  top:unset;
 }
 
 .detailed-status > .media-spoiler,
