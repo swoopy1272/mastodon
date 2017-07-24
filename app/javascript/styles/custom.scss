@@ -3,13 +3,15 @@ $ui-secondary-color: #dae8da; // lightest
 $ui-primary-color: #dae8da; // lighter
 $ui-highlight-color: #1ea21e; // vibrant
 
+$about-page-text: lighten($ui-base-color, 50%);
+
 @import 'application';
 
 body {
   background: $ui-base-color url('../images/background-cybre.png');
 }
 
-@media screen and (min-width: 1300px) { 
+@media screen and (min-width: 1300px) {
   .column {
     flex-grow: 1 !important;
     max-width: 400px;
@@ -52,15 +54,10 @@ body {
   min-height:300px;
 }
 
-.screenshot-with-signup .closed-registrations-message,
-.screenshot-with-signup form {
-  background-color: rgba(0,0,0,0.7);
-  margin:auto;
+.container.hero .closed-registrations-message .clock {
+  font-size: 150%;
+  margin: 1em auto;
 }
-
-.screenshot-with-signup .closed-registrations-message .clock {
-  font-size:150%;
-}  
 
 .column .static-content.getting-started {
   background-image: url('../images/logo-cybre.png'), url('../images/background-cybre.png');
