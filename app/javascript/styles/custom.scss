@@ -79,7 +79,6 @@ body {
 }
 
 .column {
-  // trying to fix @mdhughes safari problem
   max-height:100vh;
 }
 
@@ -119,4 +118,61 @@ body {
 .status > .media-spoiler {
   height:30vh !important;
   vertical-align:middle;
+}
+
+.actions .button.button-alternative {
+    background: $ui-highlight-color;
+    color: $ui-primary-color;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: lighten($ui-highlight-color, 4%);
+    }
+}
+
+.landing-page .header-wrapper,
+.landing-page .header-wrapper.compact {
+    background-image:url('../images/header-cybre.jpeg');
+    background-size:cover;
+    background-position:50% 50%;
+}
+
+.landing-page .header {
+    .heading {
+        visibility:hidden;
+    }
+
+    .hero .floats {
+        .float-1, .float-2, .float-3 {
+            opacity:0.4;
+            background-image:url('../images/floppy-1.svg');
+        }
+
+        .float-1 {
+            background-size:200px 200px;
+            width:200px;
+            height:200px;
+            bottom:60px;
+        }
+
+        .float-2 {
+            background-size:150px 150px;
+            width:150px;
+            height:150px;
+            right:280px;
+        }
+
+        .float-3 {
+            background-size:300px 300px;
+            width:300px;
+            height:300px;
+            right: 200px;
+            top: -80px;
+        }
+    }
+}
+
+.about-body .brand {
+    visibility:hidden;
 }
