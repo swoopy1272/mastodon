@@ -45,7 +45,7 @@ en:
         setting_delete_modal: Show confirmation dialog before deleting a ping
         setting_noindex: Opt-out of search engine indexing
         setting_reduce_motion: Reduce motion in animations
-        setting_system_font_ui: Use a poorly-chosen, heuristic-based approximation of the system font
+        setting_system_font_ui: Use an approximation of the system font
         setting_theme: Site theme
         setting_unfollow_modal: Show confirmation dialog before unfollowing someone
         severity: Severity
