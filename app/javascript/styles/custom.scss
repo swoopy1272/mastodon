@@ -7,8 +7,16 @@ $about-page-text: lighten($ui-base-color, 50%);
 
 @import 'application';
 
-body {
+body, body.about-body {
   background: $ui-base-color url('../images/background-cybre.png');
+}
+
+body.about-body {
+  // basics.scss &.about-body
+  background: darken($ui-base-color, 8%) url('../images/background-cybre.png');
+
+  background-position-y: 60px;
+  background-position-x: center;
 }
 
 @media screen and (min-width: 1300px) {
