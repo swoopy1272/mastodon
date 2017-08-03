@@ -42,6 +42,12 @@ body.about-body {
   }
 }
 
+[data-whatinput="mouse"], [data-whatinput="touch"] {
+  .status__content:focus, .status:focus {
+    outline: none;
+  }
+}
+
 .status time:after,
 .detailed-status__datetime span:after {
   font: normal normal normal 14px/1 FontAwesome;
