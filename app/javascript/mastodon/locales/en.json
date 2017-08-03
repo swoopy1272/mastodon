@@ -1,7 +1,7 @@
 {
   "account.block": "Block @{name}",
   "account.block_domain": "Hide everything from {domain}",
-  "account.disclaimer": "THESE NUMBERS ARE THE STUFF WHAT YOUR SERVER KNOWS ABOUT AND THERE MIGHT BE MORE THAT IT DONT KNOW ABOUT.",
+  "account.disclaimer_full": "THESE NUMBERS ARE THE STUFF WHAT YOUR SERVER KNOWS ABOUT AND THERE MIGHT BE MORE THAT IT DONT KNOW ABOUT.",
   "account.edit_profile": "edit ~/.profile",
   "account.follow": "Follow",
   "account.followers": "Followers",
