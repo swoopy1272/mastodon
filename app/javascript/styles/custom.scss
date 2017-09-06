@@ -1,7 +1,8 @@
 $ui-base-color: #181818; // darkest
-$ui-secondary-color: #E4F2E4; // lightest
-$ui-primary-color: #A0B49C; // lighter
 $ui-highlight-color: #1ea21e; // vibrant
+$ui-secondary-color: #E4F2E4; // lightest
+$ui-primary-color: #E4F2E4; // lighter
+$ui-primary-color-alt: #a0b49c; // darker, for external pages
 
 $about-page-text: lighten($ui-base-color, 50%);
 
@@ -189,4 +190,87 @@ body.about-body {
 
 .about-body .brand {
     visibility:hidden;
+}
+
+.activity-stream {
+  .status.light {
+    .status__header {
+      .status__meta {
+        .status__relative-time {
+          color: $ui-primary-color-alt;
+        }
+      }
+    }
+    .display-name {
+      span {
+        color: $ui-primary-color-alt;
+      }
+    }
+    .status__content {
+      a.status__content__spoiler-link {
+        background: $ui-primary-color-alt;
+
+        &:hover {
+          background: lighten($ui-primary-color-alt, 8%);
+        }
+      }
+    }
+  }
+  .detailed-status.light {
+    .detailed-status__display-name {
+      .display-name {
+        span {
+          color: $ui-primary-color-alt;
+        }
+      }
+    }
+    .status__content {
+      a.status__content__spoiler-link {
+        background: $ui-primary-color-alt;
+
+        &:hover {
+          background: lighten($ui-primary-color-alt, 8%);
+        }
+      }
+    }
+    .detailed-status__meta {
+      color: $ui-primary-color-alt;
+    }
+  }
+  .media-spoiler {
+    background: $ui-primary-color-alt;
+    &:hover {
+      background: darken($ui-primary-color-alt, 5%);
+    }
+  }
+  .pre-header {
+    color: $ui-primary-color-alt;
+    .status__display-name.muted strong {
+      color: $ui-primary-color-alt;
+    }
+  }
+}
+
+.embed {
+  .activity-stream {
+    .entry {
+      .detailed-status.light {
+        .button.button-secondary.logo-button {
+          color: $ui-primary-color-alt;
+          svg {
+            path:first-child {
+              fill: $ui-primary-color-alt;
+            }
+          }
+          &:active,
+          &:focus,
+          &:hover {
+            svg path:first-child {
+              fill: lighten($ui-primary-color-alt, 4%);
+            }
+          }
+        }
+      }
+    }
+  }
 }
