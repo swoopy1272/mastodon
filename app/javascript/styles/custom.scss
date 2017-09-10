@@ -146,6 +146,12 @@ body.about-body {
     }
 }
 
+@media screen and (max-width: 1280px) {
+  .landing-page .container.links {
+      top: -15px;
+  }
+}
+
 .landing-page .header-wrapper,
 .landing-page .header-wrapper.compact {
     background-image:url('../images/header-cybre.jpeg');
@@ -194,18 +200,14 @@ body.about-body {
 
 .activity-stream {
   .status.light {
-    .status__header {
-      .status__meta {
-        .status__relative-time {
-          color: $ui-primary-color-alt;
-        }
-      }
+    .status__header .status__meta .status__relative-time {
+      color: $ui-primary-color-alt;
     }
-    .display-name {
-      span {
-        color: $ui-primary-color-alt;
-      }
+
+    .display-name span {
+      color: $ui-primary-color-alt;
     }
+
     .status__content {
       a.status__content__spoiler-link {
         background: $ui-primary-color-alt;
@@ -216,33 +218,32 @@ body.about-body {
       }
     }
   }
-  .detailed-status.light {
-    .detailed-status__display-name {
-      .display-name {
-        span {
-          color: $ui-primary-color-alt;
-        }
-      }
-    }
-    .status__content {
-      a.status__content__spoiler-link {
-        background: $ui-primary-color-alt;
 
-        &:hover {
-          background: lighten($ui-primary-color-alt, 8%);
-        }
+  .detailed-status.light {
+    .detailed-status__display-name .display-name span {
+      color: $ui-primary-color-alt;
+    }
+
+    .status__content a.status__content__spoiler-link {
+      background: $ui-primary-color-alt;
+
+      &:hover {
+        background: lighten($ui-primary-color-alt, 8%);
       }
     }
+
     .detailed-status__meta {
       color: $ui-primary-color-alt;
     }
   }
+
   .media-spoiler {
     background: $ui-primary-color-alt;
     &:hover {
       background: darken($ui-primary-color-alt, 5%);
     }
   }
+
   .pre-header {
     color: $ui-primary-color-alt;
     .status__display-name.muted strong {
@@ -251,26 +252,18 @@ body.about-body {
   }
 }
 
-.embed {
-  .activity-stream {
-    .entry {
-      .detailed-status.light {
-        .button.button-secondary.logo-button {
-          color: $ui-primary-color-alt;
-          svg {
-            path:first-child {
-              fill: $ui-primary-color-alt;
-            }
-          }
-          &:active,
-          &:focus,
-          &:hover {
-            svg path:first-child {
-              fill: lighten($ui-primary-color-alt, 4%);
-            }
-          }
-        }
-      }
+.embed .activity-stream .entry .detailed-status.light .button.button-secondary.logo-button {
+  color: $ui-primary-color-alt;
+  svg {
+    path:first-child {
+      fill: $ui-primary-color-alt;
+    }
+  }
+  &:active,
+  &:focus,
+  &:hover {
+    svg path:first-child {
+      fill: lighten($ui-primary-color-alt, 4%);
     }
   }
 }
