@@ -140,19 +140,19 @@ function main() {
 
     header.style.backgroundImage = `url(${url})`;
   });
-}
 
-function sizeBioText() {
-  const noteCounter = document.querySelector('.note-counter');
-  const bioTextArea = document.querySelector('#account_note');
+  function sizeBioText() {
+    const noteCounter = document.querySelector('.note-counter');
+    const bioTextArea = document.querySelector('#account_note');
 
-  if (noteCounter) {
-    noteCounter.textContent = 413 - length(bioTextArea.value);
-  }
+    if (noteCounter) {
+      noteCounter.textContent = 413 - length(bioTextArea.value);
+    }
 
-  if (bioTextArea) {
-    bioTextArea.style.height = 'auto';
-    bioTextArea.style.height = (bioTextArea.scrollHeight+3) + 'px';
+    if (bioTextArea) {
+      bioTextArea.style.height = 'auto';
+      bioTextArea.style.height = (bioTextArea.scrollHeight+3) + 'px';
+    }
   }
 }
 
