@@ -48,6 +48,7 @@ en:
         setting_system_font_ui: Use an approximation of the system font
         setting_theme: Site theme
         setting_unfollow_modal: Show confirmation dialog before unfollowing someone
+        setting_theme: Theme
         severity: Severity
         type: Import type
         username: Username
