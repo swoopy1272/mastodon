@@ -6,7 +6,7 @@ $win95-blue: #00007f;
   src: url('../fonts/premillenium/MSSansSerif.ttf') format('truetype');
 }
 
-@import 'application';
+@import 'custom';
 
 body {
   font-size:13px;
@@ -353,6 +353,12 @@ body {
   border-left-width:1px;
   padding:0px 0px 0px 0px;
   margin-right:4px;
+}
+.icon-button,
+.icon-button.inverted,
+.icon-button:hover,
+.icon-button.inverted:hover {
+  color:#3f3f3f;
 }
 
 .icon-button:active {
