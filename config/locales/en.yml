@@ -497,7 +497,9 @@ en:
     two_factor_authentication: Two-factor Authentication
     your_apps: Your applications
   themes:
-    default: Mastodon
+    default: Cybrespace
+    mastodon: Mastodon
+    win95: Ｍａｓｔｏ 95
   statuses:
     open_in_web: Open in web
     over_character_limit: character limit of %{max} exceeded
