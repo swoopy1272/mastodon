@@ -276,3 +276,13 @@ body.about-body {
     -webkit-clip-path: polygon(25% 0, 75% 0, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0 75%, 0 25%);
     clip-path: polygon(25% 0, 75% 0, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0 75%, 0 25%);
 }
+
+.emoji-mart-anchors {
+  color: darken($ui-primary-color, 8%);
+}
+
+.emoji-mart-anchor {
+  &:hover {
+    color: darken($ui-primary-color, 12%);
+  }
+}
