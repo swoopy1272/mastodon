@@ -278,11 +278,19 @@ body.about-body {
 }
 
 .emoji-mart-anchors {
-  color: darken($ui-primary-color, 8%);
+  color: darken($ui-primary-color-alt;
+}
+
+.emoji-mart-search {
+  background: $simple-background-color;
+  input {
+    color: $ui-primary-color-alt;
+    border: 1px solid $ui-primary-color-alt;
+  }
 }
 
 .emoji-mart-anchor {
   &:hover {
-    color: darken($ui-primary-color, 12%);
+    color: darken($ui-primary-color-alt, 8%);
   }
 }
