@@ -44,10 +44,12 @@ body.about-body {
 }
 
 [data-whatinput="mouse"], [data-whatinput="touch"] {
-  .status__content:focus, .status:focus {
+  .status__content:focus, .status:focus,
+  .status__wrapper:focus, .status__content__text:focus {
     outline: none;
   }
 }
+
 
 .status time:after,
 .detailed-status__datetime span:after {
@@ -277,10 +279,6 @@ body.about-body {
     clip-path: polygon(25% 0, 75% 0, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0 75%, 0 25%);
 }
 
-.emoji-mart-anchors {
-  color: darken($ui-primary-color-alt;
-}
-
 .emoji-mart-search {
   background: $simple-background-color;
   input {
@@ -290,7 +288,21 @@ body.about-body {
 }
 
 .emoji-mart-anchor {
+  color: $ui-primary-color-alt;
   &:hover {
     color: darken($ui-primary-color-alt, 8%);
+  }
+}
+
+.search-popout {
+  background: $ui-base-color;
+  color: $ui-primary-color;
+
+  h4 {
+    color: $ui-primary-color;
+  }
+
+  em {
+    color: $ui-highlight-color;
   }
 }

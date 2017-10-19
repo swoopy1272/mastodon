@@ -29,7 +29,7 @@ en:
     learn_more: Learn more
     other_instances: Instance list
     source_code: Source code
-    status_count_after: pings 
+    status_count_after: pings
     status_count_before: Who authored
     user_count_after: users
     user_count_before: Home to
@@ -496,10 +496,6 @@ en:
     settings: Settings
     two_factor_authentication: Two-factor Authentication
     your_apps: Your applications
-  themes:
-    default: Cybrespace
-    mastodon: Mastodon
-    win95: Ｍａｓｔｏ 95
   statuses:
     open_in_web: Open in web
     over_character_limit: character limit of %{max} exceeded
@@ -592,7 +588,9 @@ en:
       <p>Originally adapted from the <a href="https://github.com/discourse/discourse">Discourse privacy policy</a>.</p>
     title: "%{instance} Terms of Service and Privacy Policy"
   themes:
-    default: Mastodon
+    default: Cybrespace
+    mastodon: Mastodon
+    win95: Ｍａｓｔｏ 95
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
