@@ -1,8 +1,7 @@
 ---
-en:
+en-CY:
   about:
-    about_hashtag_html: These are public toots tagged with <strong>#%{hashtag}</strong>. You can interact with them if you have an account anywhere in the fediverse.
-    about_mastodon_html: Mastodon is a social network based on open web protocols and free, open-source software. It is decentralized like e-mail.
+    about_mastodon_html: Cybrespace is an instance of Mastodon, a social network based on open web protocols and free, open-source software. It is decentralized like e-mail.
     about_this: About
     closed_registrations: Registrations are currently closed on this instance. However! You can find a different instance to make an account on and get access to the very same network from there.
     contact: Contact
@@ -19,7 +18,7 @@ en:
       humane_approach_title: A more humane approach
       not_a_product_body: Mastodon is not a commercial network. No advertising, no data mining, no walled gardens. There is no central authority.
       not_a_product_title: You’re a person, not a product
-      real_conversation_body: With 500 characters at your disposal and support for granular content and media warnings, you can express yourself the way you want to.
+      real_conversation_body: With 512 characters at your disposal and support for granular content and media warnings, you can express yourself the way you want to.
       real_conversation_title: Built for real conversation
       within_reach_body: Multiple apps for iOS, Android, and other platforms thanks to a developer-friendly API ecosystem allow you to keep up with your friends anywhere.
       within_reach_title: Always within reach
@@ -29,7 +28,7 @@ en:
     learn_more: Learn more
     other_instances: Instance list
     source_code: Source code
-    status_count_after: statuses
+    status_count_after: pings 
     status_count_before: Who authored
     user_count_after: users
     user_count_before: Home to
@@ -42,21 +41,14 @@ en:
     nothing_here: There is nothing here!
     people_followed_by: People whom %{name} follows
     people_who_follow: People who follow %{name}
-    posts: Toots
-    posts_with_replies: Toots with replies
+    posts: Pings
+    posts_with_replies: Pings with replies
     remote_follow: Remote follow
     reserved_username: The username is reserved
     roles:
       admin: Admin
     unfollow: Unfollow
   admin:
-    account_moderation_notes:
-      account: Moderator
-      create: Create
-      created_at: Date
-      created_msg: Moderation note successfully created!
-      delete: Delete
-      destroyed_msg: Moderation note successfully destroyed!
     accounts:
       are_you_sure: Are you sure?
       confirm: Confirm
@@ -68,7 +60,6 @@ en:
       email: E-mail
       feed_url: Feed URL
       followers: Followers
-      followers_url: Followers URL
       follows: Follows
       inbox_url: Inbox URL
       ip: IP
@@ -83,7 +74,6 @@ en:
         silenced: Silenced
         suspended: Suspended
         title: Moderation
-      moderation_notes: Moderation notes
       most_recent_activity: Most recent activity
       most_recent_ip: Most recent IP
       not_subscribed: Not subscribed
@@ -103,7 +93,6 @@ en:
       resubscribe: Resubscribe
       salmon_url: Salmon URL
       search: Search
-      shared_inbox_url: Shared Inbox URL
       show:
         created_reports: Reports created by this account
         report: report
@@ -117,25 +106,6 @@ en:
       unsubscribe: Unsubscribe
       username: Username
       web: Web
-    custom_emojis:
-      copied_msg: Successfully created local copy of the emoji
-      copy: Copy
-      copy_failed_msg: Could not make a local copy of that emoji
-      created_msg: Emoji successfully created!
-      delete: Delete
-      destroyed_msg: Emojo successfully destroyed!
-      disable: Disable
-      disabled_msg: Successfully disabled that emoji
-      emoji: Emoji
-      enable: Enable
-      enabled_msg: Successfully enabled that emoji
-      image_hint: PNG up to 50KB
-      new:
-        title: Add new custom emoji
-      shortcode: Shortcode
-      shortcode_hint: At least 2 characters, only alphanumeric characters and underscores
-      title: Custom emojis
-      upload: Upload
     domain_blocks:
       add_new: Add new
       created_msg: Domain block is now being processed
@@ -168,21 +138,9 @@ en:
         undo: Undo
       title: Domain Blocks
       undo: Undo
-    email_domain_blocks:
-      add_new: Add new
-      created_msg: Email domain block successfully created
-      delete: Delete
-      destroyed_msg: Email domain block successfully deleted
-      domain: Domain
-      new:
-        create: Create block
-        title: New email domain block
-      title: Email Domain Block
     instances:
       account_count: Known accounts
       domain_name: Domain
-      reset: Reset
-      search: Search
       title: Known Instances
     reports:
       action_taken_by: Action taken by
@@ -235,9 +193,6 @@ en:
         desc_html: You can write your own privacy policy, terms of service or other legalese. You can use HTML tags
         title: Custom terms of service
       site_title: Instance name
-      thumbnail:
-        desc_html: Used for previews via OpenGraph and API. 1200x630px recommended
-        title: Instance thumbnail
       timeline_preview:
         desc_html: Display public timeline on landing page
         title: Timeline preview
@@ -289,10 +244,10 @@ en:
     delete_account_html: If you wish to delete your account, you can <a href="%{path}">proceed here</a>. You will be asked for confirmation.
     didnt_get_confirmation: Didn't receive confirmation instructions?
     forgot_password: Forgot your password?
-    invalid_reset_password_token: Password reset token is invalid or expired. Please request a new one.
-    login: Log in
-    logout: Logout
-    register: Sign up
+    invalid_reset_password_token: Password reset token is invalid or expired. Please try again.
+    login: Jack in
+    logout: Jack out
+    register: Apply for upload
     resend_confirmation: Resend confirmation instructions
     reset_password: Reset password
     set_new_password: Set new password
@@ -336,9 +291,6 @@ en:
       content: Security verification failed. Are you blocking cookies?
       title: Security verification failed
     '429': Throttled
-    '500':
-      content: We're sorry, but something went wrong on our end.
-      title: This page is not correct
     noscript_html: To use the Mastodon web application, please enable JavaScript. Alternatively, try one of the <a href="https://github.com/tootsuite/documentation/blob/master/Using-Mastodon/Apps.md">native apps</a> for Mastodon for your platform.
   exports:
     blocks: You block
@@ -348,7 +300,7 @@ en:
     storage: Media storage
   followers:
     domain: Domain
-    explanation_html: If you want to ensure the privacy of your statuses, you must be aware of who is following you. <strong>Your private statuses are delivered to all instances where you have followers</strong>. You may wish to review them, and remove followers if you do not trust your privacy to be respected by the staff or software of those instances.
+    explanation_html: If you want to ensure the privacy of your pings , you must be aware of who is following you. <strong>Your private pings are delivered to all instances where you have followers</strong>. You may wish to review them, and remove followers if you do not trust your privacy to be respected by the staff or software of those instances.
     followers_count: Number of followers
     lock_link: Lock your account
     purge: Remove from followers
@@ -356,7 +308,7 @@ en:
       one: In the process of soft-blocking followers from one domain...
       other: In the process of soft-blocking followers from %{count} domains...
     true_privacy_html: Please mind that <strong>true privacy can only be achieved with end-to-end encryption</strong>.
-    unlocked_warning_html: Anyone can follow you to immediately view your private statuses. %{lock_link} to be able to review and reject followers.
+    unlocked_warning_html: Anyone can follow you to immediately view your private pings. %{lock_link} to be able to review and reject followers.
     unlocked_warning_title: Your account is not locked
   generic:
     changes_saved_msg: Changes successfully saved!
@@ -377,7 +329,7 @@ en:
   landing_strip_signup_html: If you don't, you can <a href="%{sign_up_path}">sign up here</a>.
   media_attachments:
     validations:
-      images_and_video: Cannot attach a video to a status that already contains images
+      images_and_video: Cannot attach a video to a ping that already contains images
       too_many: Cannot attach more than 4 files
   notification_mailer:
     digest:
@@ -390,8 +342,8 @@ en:
         one: "1 new notification since your last visit \U0001F418"
         other: "%{count} new notifications since your last visit \U0001F418"
     favourite:
-      body: 'Your status was favourited by %{name}:'
-      subject: "%{name} favourited your status"
+      body: 'Your ping was florped by %{name}:'
+      subject: "%{name} florped your ping"
     follow:
       body: "%{name} is now following you!"
       subject: "%{name} is now following you"
@@ -402,8 +354,8 @@ en:
       body: 'You were mentioned by %{name} in:'
       subject: You were mentioned by %{name}
     reblog:
-      body: 'Your status was boosted by %{name}:'
-      subject: "%{name} boosted your status"
+      body: 'Your ping was relayed by %{name}:'
+      subject: "%{name} relayed your ping"
   number:
     human:
       decimal_units:
@@ -419,11 +371,6 @@ en:
     next: Next
     prev: Prev
     truncate: "&hellip;"
-  preferences:
-    languages: Languages
-    other: Other
-    publishing: Publishing
-    web: Web
   push_notifications:
     favourite:
       title: "%{name} favourited your status"
@@ -464,7 +411,7 @@ en:
       weibo: Weibo
     current_session: Current session
     description: "%{browser} on %{platform}"
-    explanation: These are the web browsers currently logged in to your Mastodon account.
+    explanation: These are the web browsers currently logged in to your cybre.space account.
     ip: IP
     platforms:
       adobe_air: Adobe Air
@@ -487,20 +434,22 @@ en:
     back: Back to Mastodon
     delete: Account deletion
     development: Development
-    edit_profile: Edit profile
+    edit_profile: edit ~/.profile
     export: Data export
     followers: Authorized followers
     import: Import
-    notifications: Notifications
     preferences: Preferences
     settings: Settings
     two_factor_authentication: Two-factor Authentication
     your_apps: Your applications
+  themes:
+    default: Cybrespace
+    mastodon: Mastodon
+    win95: Ｍａｓｔｏ 95
   statuses:
     open_in_web: Open in web
     over_character_limit: character limit of %{max} exceeded
     pin_errors:
-      limit: Too many toots pinned
       ownership: Someone else's toot cannot be pinned
       private: Non-public toot cannot be pinned
       reblog: A boost cannot be pinned
@@ -514,8 +463,8 @@ en:
       unlisted_long: Everyone can see, but not listed on public timelines
   stream_entries:
     click_to_show: Click to show
-    pinned: Pinned toot
-    reblogged: boosted
+    pinned: Pinned ping
+    reblogged: relayed
     sensitive_content: Sensitive content
   terms:
     body_html: |
@@ -587,8 +536,6 @@ en:
 
       <p>Originally adapted from the <a href="https://github.com/discourse/discourse">Discourse privacy policy</a>.</p>
     title: "%{instance} Terms of Service and Privacy Policy"
-  themes:
-    default: Mastodon
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
