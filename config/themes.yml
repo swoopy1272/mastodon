@@ -1,1 +1,2 @@
 default: styles/application.scss
+light: styles/light.scss
