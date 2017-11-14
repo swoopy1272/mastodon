@@ -166,6 +166,7 @@ $about-page-text: $primary-text-color;
 .autosuggest-textarea__textarea,
 .spoiler-input__input {
   color: $primary-text-color;
+  border: 1px solid $ui-secondary-color;
 }
 
 button.icon-button {
@@ -273,6 +274,18 @@ button.icon-button {
   }
 }
 
+.search-popout {
+  background: $ui-base-color;
+  color: $ui-primary-color;
+
+  h4 {
+    color: $ui-primary-color;
+  }
+
+  em {
+    color: $ui-highlight-color;
+  }
+}
 .static-content {
     /*color: $primary-text-color;*/
 }
@@ -291,12 +304,24 @@ button.icon-button {
   color: $white;
 }
 
+.status {
+  border-bottom: 1px solid $ui-secondary-color;
+}
+
 .status__content {
   .status__content__spoiler-link {
     background: $ui-base-lighter-color;
 
     &:hover {
       background: lighten($ui-base-lighter-color, 5%);
+    }
+  }
+}
+.dropdown-menu__item {
+  & > a {
+    color: $primary-text-color;
+    &:hover {
+      color: $ui-base-color;
     }
   }
 }
@@ -324,8 +349,12 @@ button.icon-button {
   color: $primary-text-color;
 }
 
-.status__content,
 .reply-indicator__content {
+  color: lighten($ui-highlight-color, 30%);
+}
+
+.status__content 
+{
   a {
     color: $ui-highlight-color;
 
@@ -335,6 +364,10 @@ button.icon-button {
       }
     }
   }
+}
+
+.detailed-status__display-name {
+  color: $ui-base-lighter-color;
 }
 
 /* forms.scss */
@@ -473,40 +506,32 @@ button.icon-button {
 }
 
 
-.media-gallery {
-  max-height:30vh;
-  height:30vh !important;
-  position:relative;
-  margin-top:20px;
-  margin-left:-68px;
-  width: calc(100% + 80px);
-}
-
-.detailed-status .media-gallery {
-  margin-left:-10px;
-  width: calc(100% + 22px);
-}
-
-.media-spoiler-video,
-.status__video-player,
-.detailed-status > .media-spoiler,
-.status > .media-spoiler {
+.media-gallery,
+.video-player {
   max-height:30vh;
   height:30vh !important;
   position:relative;
   margin-top:20px;
   margin-left:-68px;
   width: calc(100% + 80px) !important;
+  max-width: calc(100% + 80px);
 }
 
-.status__video-player-video {
-  transform:unset;
-  top:unset;
+.detailed-status .media-gallery,
+.detailed-status .video-player {
+  margin-left:-10px;
+  width: calc(100% + 22px);
+  max-width: calc(100% + 22px);
 }
 
-.detailed-status > .media-spoiler,
-.status > .media-spoiler {
-  height:30vh !important;
+.video-player video {
+  transform: unset;
+  top: unset;
+}
+
+.detailed-status .media-spoiler,
+.status .media-spoiler {
+  height:100% !important;
   vertical-align:middle;
 }
 
