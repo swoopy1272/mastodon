@@ -1,14 +1,19 @@
-$ui-base-color: #f4ebee; // "darkest"
-$ui-base-alt: #f7e8ed;
-$ui-base-lighter-color: darken($ui-base-color, 25%); // Lighter darkest
+$ui-base-color: #f7e8ed; // "darkest"
+$ui-base-alt: #f9f2f5;
+$ui-base-lighter-color: darken($ui-base-color, 40%); // Lighter darkest
 $ui-secondary-color: #ead0d6; // "lightest"
 $ui-primary-color: #bf5677; // "lighter"
 $ui-highlight-color: #bf5677; // "vibrant"
-$primary-text-color: #333;
+$primary-text-color: #382b32;
+
+$header-color: $ui-primary-color;
+$header-text-color: #fff;
 
 $about-page-text: $primary-text-color;
 
 @import 'application';
+
+$gold-star: #dd9d08;
 
 /* cybre-specific additions */
 
@@ -131,20 +136,20 @@ $about-page-text: $primary-text-color;
 }
 
 .column-header {
-  background: $ui-base-color;
-  color: $primary-text-color;
+  background: $header-color;
+  color: $header-text-color;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
 }
 
 .column-header__button {
-  background: $ui-base-color;
-  color: $primary-text-color;
+  background: $header-color;
+  color: $header-text-color;
   border-top-right-radius: 3px;
 
   &:hover {
-    color: darken($ui-primary-color, 50%);
+    color: darken($ui-base-color, 10%);
   }
 
   &.active {
@@ -158,13 +163,13 @@ $about-page-text: $primary-text-color;
 }
 
 .column-header__back-button {
-  background: $ui-base-color;
-  color:$ui-highlight-color;
+  background: $header-color;
+  color:$header-text-color;
 }
 
 .column-back-button {
-  background: $ui-base-color;
-  color:$ui-highlight-color;
+  background: $header-color;
+  color:$header-text-color;
 }
 
 .column-header__collapsible-inner {
@@ -239,7 +244,7 @@ button.icon-button {
     }
   }
 
-  color: $ui-base-lighter-color;
+  color: lighten(desaturate($ui-base-lighter-color, 20%), 20%);
 
   &:hover,
   &:active,
@@ -383,8 +388,12 @@ button.icon-button {
   color:$white;
 }
 
-.media-spoiler {
+.media-spoiler,
+.video-player__spoiler.active {
   color: $white;
+  &:hover {
+    color: darken($white, 5%);
+  }
 }
 
 .status {
