@@ -8,10 +8,16 @@ $primary-text-color: #382b32;
 
 $header-color: $ui-primary-color;
 $header-text-color: #fff;
+$icon-button-inactive-color: lighten(desaturate($ui-base-lighter-color, 20%), 20%);
+
 
 $about-page-text: $primary-text-color;
 
 @import 'application';
+
+$ui-base-lighter-color: $icon-button-inactive-color;
+@import 'mastodon/boost';
+$ui-base-lighter-color: darken($ui-base-color, 40%); // Lighter darkest
 
 $gold-star: #dd9d08;
 
@@ -19,8 +25,9 @@ $gold-star: #dd9d08;
 
 .column .static-content.getting-started {
   background-image: url('../images/logo-cybre-light.png');
-  background-size:50% 50%;
+  background-size:auto 50%;
   background-position: 50% 75%;
+  background-repeat:no-repeat;
 }
 
 .ui, body {
@@ -235,21 +242,21 @@ button.icon-button {
   }
 
   &.disabled {
-    color: lighten($ui-base-lighter-color, 20%);
+    color: desaturate($icon-button-inactive-color, 5%);
 
     &:hover,
     &:active,
     &:focus {
-      color: lighten($ui-base-lighter-color, 20%);
+      color: desaturate($icon-button-inactive-color, 5%);
     }
   }
 
-  color: lighten(desaturate($ui-base-lighter-color, 20%), 20%);
+  color: $icon-button-inactive-color;
 
   &:hover,
   &:active,
   &:focus {
-    color: darken($ui-base-lighter-color, 5%);
+    color: darken($icon-button-inactive-color, 5%);
   }
 }
 
@@ -413,6 +420,11 @@ button.icon-button {
     }
   }
 }
+
+.muted .status__content p {
+  color: $icon-button-inactive-color;
+}
+
 .dropdown-menu__item {
   & > a {
     color: $primary-text-color;
@@ -514,7 +526,7 @@ button.icon-button {
 .drawer .drawer__inner {
   overflow: visible;
   height:inherit;
-  background-color:$ui-base-alt;
+  background:$ui-base-alt;
 }
 
 .drawer__pager {
