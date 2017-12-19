@@ -78,8 +78,9 @@ body.about-body {
 
 .column .static-content.getting-started {
   background-image: url('../images/logo-cybre.png'), url('../images/background-cybre.png');
-  background-position: 50% 50%;
-  background-size:cover;
+  background-size:auto 50%, cover;
+  background-position: 50% 75%, center center;
+  background-repeat:no-repeat, no-repeat;
 }
 
 .columns-area {
@@ -89,6 +90,7 @@ body.about-body {
 .drawer .drawer__inner {
   overflow: visible;
   height:inherit;
+  background-image: none;
 }
 
 .drawer__pager {
@@ -99,6 +101,9 @@ body.about-body {
   max-height:100vh;
 }
 
+.status__content {
+  position:relative;
+}
 
 .media-gallery {
   max-height:30vh;
@@ -114,16 +119,16 @@ body.about-body {
   width: calc(100% + 22px);
 }
 
-.media-spoiler-video,
-.status__video-player,
 .detailed-status > .media-spoiler,
-.status > .media-spoiler {
+.status > .media-spoiler,
+.video-player {
   max-height:30vh;
   height:30vh !important;
   position:relative;
   margin-top:20px;
   margin-left:-68px;
   width: calc(100% + 80px) !important;
+  max-width: none;
 }
 
 .status__video-player-video {
@@ -131,8 +136,8 @@ body.about-body {
   top:unset;
 }
 
-.detailed-status > .media-spoiler,
-.status > .media-spoiler {
+.detailed-status .media-spoiler,
+.status .media-spoiler {
   height:30vh !important;
   vertical-align:middle;
 }
