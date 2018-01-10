@@ -1,4 +1,4 @@
-default: styles/application.scss
+default: styles/cybre.scss
 light: styles/light.scss
 mastodon: styles/application.scss 
 win95: styles/win95.scss
