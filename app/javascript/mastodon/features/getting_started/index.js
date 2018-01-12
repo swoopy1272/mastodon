@@ -17,6 +17,7 @@ const messages = defineMessages({
   navigation_subheading: { id: 'column_subheading.navigation', defaultMessage: 'Navigation' },
   settings_subheading: { id: 'column_subheading.settings', defaultMessage: 'Settings' },
   community_timeline: { id: 'navigation_bar.community_timeline', defaultMessage: '/timelines/local' },
+  direct: { id: 'navigation_bar.direct', defaultMessage: '~/.direct-messages' },
   preferences: { id: 'navigation_bar.preferences', defaultMessage: 'Preferences' },
   follow_requests: { id: 'navigation_bar.follow_requests', defaultMessage: '~/.follow-requests' },
   sign_out: { id: 'navigation_bar.logout', defaultMessage: 'exit' },
@@ -66,6 +67,10 @@ export default class GettingStarted extends ImmutablePureComponent {
       if (!columns.find(item => item.get('id') === 'PUBLIC')) {
         navItems.push(<ColumnLink key='3' icon='globe' text={intl.formatMessage(messages.public_timeline)} to='/timelines/public' />);
       }
+    }
+
+    if (!multiColumn || !columns.find(item => item.get('id') === 'DIRECT')) {
+      navItems.push(<ColumnLink key='101' icon='envelope' text={intl.formatMessage(messages.direct)} to='/timelines/direct' />);
     }
 
     navItems.push(
