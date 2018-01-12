@@ -8,7 +8,7 @@ import {
   refreshDirectTimeline,
   expandDirectTimeline,
 } from '../../actions/timelines';
-import { addColumn, removeColumn, moveColumn } from '../..//actions/columns';
+import { addColumn, removeColumn, moveColumn } from '../../actions/columns';
 import { defineMessages, injectIntl, FormattedMessage } from 'react-intl';
 import ColumnSettingsContainer from './containers/column_settings_container';
 import { connectDirectStream } from '../../actions/streaming';
