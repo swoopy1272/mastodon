@@ -10,6 +10,8 @@ class FanOutOnWriteService < BaseService
 
     deliver_to_self(status) if status.account.local?
 
+    render_anonymous_payload(status)
+
     if status.direct_visibility?
       deliver_to_mentioned_followers(status)
       deliver_to_direct_timelines(status)
@@ -20,7 +22,6 @@ class FanOutOnWriteService < BaseService
 
     return if status.account.silenced? || !status.public_visibility? || status.reblog?
 
-    render_anonymous_payload(status)
     deliver_to_hashtags(status)
 
     return if status.reply? && status.in_reply_to_account_id != status.account_id
