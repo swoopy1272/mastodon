@@ -39,12 +39,19 @@ class Api::V1::StatusesController < Api::BaseController
   end
 
   def create
+    spoiler_text = status_params[:spoiler_text]
+    if status_params[:status].lines.count > 8
+        if spoiler_text.nil? or spoiler_text.blank?
+            spoiler_text = "long"
+        end
+    end
+      
     @status = PostStatusService.new.call(current_user.account,
                                          status_params[:status],
                                          status_params[:in_reply_to_id].blank? ? nil : Status.find(status_params[:in_reply_to_id]),
                                          media_ids: status_params[:media_ids],
                                          sensitive: status_params[:sensitive],
-                                         spoiler_text: status_params[:spoiler_text],
+                                         spoiler_text: spoiler_text,
                                          visibility: status_params[:visibility],
                                          application: doorkeeper_token.application,
                                          idempotency: request.headers['Idempotency-Key'])
